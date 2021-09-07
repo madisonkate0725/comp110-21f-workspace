@@ -10,7 +10,7 @@ number_of_times_repeated: int = int(input("How many times do you want to repeat 
 counter: int = 0
 
 while counter < number_of_times_repeated:
-    print(word_repeated)
     counter = counter + 1
-    if counter <= 0:
-        print("No beat...")
+print((word_repeated + " ") * counter)
+if counter <= 0:
+    print("No beat...")
