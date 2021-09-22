@@ -1,5 +1,8 @@
 from random import randint
 
+__author__: "730331607" 
+
+
 COWBOY_HAT: str = "\U0001F920"
 
 SPARKLE: str = "\U0001F48E"
@@ -119,11 +122,11 @@ def main() -> None:
         if points <= 7:
             quote_number_1: int = randint(1, 3)
             if quote_number_1 == 1:
-                print(f"This is the skin of a killer, Bella {SPARKLE}. You have {points} points.")
+                print(f"This is the skin of a killer, Bella {SPARKLE}.")
             if quote_number_1 == 2:
                 print(f"Where the hell have you been, loca {LOLZ_FACE}?!")
             if quote_number_1 == 3:
-                print(f"Don't worry about the bears, Bella. My Kung Fu is strong {KUNG_FU_SKILLS}. You have {points} points.")
+                print(f"Don't worry about the bears, Bella. My Kung Fu is strong {KUNG_FU_SKILLS}.")
         else:
             if points <= 10:
                 quote_number_2: int = randint(1, 3)
