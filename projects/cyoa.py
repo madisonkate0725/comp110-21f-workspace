@@ -1,3 +1,5 @@
+"""Twilight Quiz Project."""
+
 from random import randint
 
 __author__: "730331607" 
