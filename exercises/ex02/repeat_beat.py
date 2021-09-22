@@ -17,5 +17,3 @@ else:
         product = word_repeated + " " + product
         counter = counter + 1
     print(product)
-
-
