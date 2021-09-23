@@ -39,18 +39,23 @@ DIVORCE: str = "\U0001F494"
 
 HOT: str = "\U00002764"
 
+player: str
+
 
 def greet() -> None:
     """Print a welcome message."""
     name: str = input("What is your name? ")
     global player
-    player: str = name
+    player = name
     print(f"{player}, welcome to the Twilight Quiz!")
 
 
 def total_number_of_points(a: int) -> int:
     """Tally of number of points."""
     return(points)
+
+
+points: int = 0
 
 
 def main() -> None:
@@ -119,7 +124,7 @@ def main() -> None:
                         else:
                             print("Congradulations, you made it! Your quote is: ")
         global points
-        points: int = question_1 + question_2 + question_3 + question_4 + question_5
+        points = question_1 + question_2 + question_3 + question_4 + question_5
         if points <= 7:
             quote_number_1: int = randint(1, 3)
             if quote_number_1 == 1:
