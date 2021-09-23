@@ -44,7 +44,7 @@ def greet() -> None:
     """Print a welcome message."""
     name: str = input("What is your name? ")
     global player
-    player = name
+    player: str = name
     print(f"{player}, welcome to the Twilight Quiz!")
 
 
@@ -119,7 +119,7 @@ def main() -> None:
                         else:
                             print("Congradulations, you made it! Your quote is: ")
         global points
-        points = question_1 + question_2 + question_3 + question_4 + question_5
+        points: int = question_1 + question_2 + question_3 + question_4 + question_5
         if points <= 7:
             quote_number_1: int = randint(1, 3)
             if quote_number_1 == 1:
