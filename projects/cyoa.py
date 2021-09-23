@@ -39,11 +39,10 @@ DIVORCE: str = "\U0001F494"
 
 HOT: str = "\U00002764"
 
-name: str = input("What is your name? ")
-
 
 def greet() -> None:
     """Print a welcome message."""
+    name: str = input("What is your name? ")
     global player
     player = name
     print(f"{player}, welcome to the Twilight Quiz!")
@@ -65,7 +64,7 @@ def main() -> None:
     question_5: int = 0
     while ready_to_play == 1:
         print("Enter the number of your answer choice: ")
-        print(f"{name}, where is your favoirite place to wallow in your sorrows about your love triangle with a werewolf and vampire?")
+        print("Where is your favoirite place to wallow in your sorrows about your love triangle with a werewolf and vampire?")
         print("1. La Push, Baby")
         print("2. On the ground in the woods")
         print("3. Listening to 'Rosyln' by Bon Iver on repeat")
@@ -75,7 +74,7 @@ def main() -> None:
         if answer_1 == 4:
             print("Game over! You are obviously not in the Twilight state of mind.")
         else:
-            print(f"{name}, what team are you on?")
+            print("What team are you on?")
             print("1. Team Edward")
             print("2. Team Jacob")
             print("3. Team Charlie")
@@ -86,7 +85,7 @@ def main() -> None:
                 print("Game over! You are obviously not in the Twilight state of mind.")
             else:
                 print("Enter the number of your answer choice: ")
-                print(f"{name}, what would be your special vampire power?")
+                print("What would be your special vampire power?")
                 print("1. Mind reading")
                 print("2. Shielding")
                 print("3. Seeing the future")
@@ -97,7 +96,7 @@ def main() -> None:
                     print("Game over! You are obviously not in the Twilight state of mind.")
                 else:
                     print("Enter the number of your answer choice: ")
-                    print(f"{name}, who is your favorite non-main-character couple?")
+                    print("Who is your favorite non-main-character couple?")
                     print("1. Emmett and Rosalie")
                     print("2. Alice and Jasper")
                     print("3. Esme and Carlisle")
@@ -108,7 +107,7 @@ def main() -> None:
                         print("Game over! You are obviously not in the Twilight state of mind.")
                     else:
                         print("Enter the number of your answer choice: ")
-                        print(f"{name}, pick an iconic Twilight song:")
+                        print("Pick an iconic Twilight song: ")
                         print("1. A Thousand Years")
                         print("2. Turning Page")
                         print("3. Supermassive Black Hole")
@@ -164,7 +163,7 @@ def main() -> None:
                             print(f"I think you'll find the vampire-human divorce rate a little lower {DIVORCE}.")
                         if quote_number_5 == 3:
                             print(f"Dating an older woman. Hot {HOT}.")
-        print(f"Your point total was: {points}")
+        print(f"Your point total was: {total_number_of_points(points)}")
         ready_to_play = int(input("Do you want to play again? 1 for Yes or 2 for No: "))
 
 
